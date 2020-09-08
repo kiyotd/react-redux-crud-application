@@ -49,5 +49,4 @@ function setUserNameAsync() {
 
 ## 参考
 
-[Redux における "ActionCreator & Action" の Best Practice を考える](https://qiita.com
-/staka121/items/22c51b27e656ecd49600#action-creator)
+[Redux における "ActionCreator & Action" の Best Practice を考える](https://qiita.com/staka121/items/22c51b27e656ecd49600#action-creator)
