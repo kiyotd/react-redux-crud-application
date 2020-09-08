@@ -1,6 +1,6 @@
 # README
 
-`React`+`Redux`を学習した際の覚え書きです。`React Hooks`全盛期の今、学習するのはモチベもあがりづらいのですが、基礎体力として学びます。
+`React`+`Redux`を学習した際の覚え書きです。
 
 ## Action Creator
 
