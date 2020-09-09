@@ -1,24 +1,16 @@
-export const INCREMENT = "INCREMENT";
-export const DECREMENT = "DECREMENT";
+import axios from "axios";
+
+export const READ_EVENTS = "READ_EVENTS";
+
+const ROOT_URL = "https://udemy-utils.herokuapp.com/api/v1/";
+const QUERY_STRING = "?token=token123";
 
 /**
- * インクリメント (Action Creator)
- * @returns {{type: string}} Actionを返す
+ * イベントデータを全件取得 (Action Creator)
  */
-export const increment = () => {
-  // Action
-  return {
-    type: INCREMENT
-  };
-};
-
-/**
- * デクリメント (Action Creator)
- * @returns {{type: string}} Actionを返す
- */
-export const decrement = () => {
-  // Action
-  return {
-    type: DECREMENT
+export const readEvents = () => {
+  return async (dispatch) => {
+    const response = await axios.get(`${ROOT_URL}/events${QUERY_STRING}`);
+    dispatch({ type: READ_EVENTS, response: response });
   };
 };
