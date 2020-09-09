@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import { increment, decrement } from "../actions";
 
-class App extends React.Component {
+class EventsIndex extends React.Component {
 
   render() {
     const props = this.props;
@@ -31,4 +31,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(EventsIndex);
